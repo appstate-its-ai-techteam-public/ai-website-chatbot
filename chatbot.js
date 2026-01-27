@@ -296,7 +296,7 @@ function injectChatbot() {
       box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     }
     #open-chat:focus {
-      outline: 3px solid rgba(79, 70, 229, 0.5);
+      outline: 3px solid #0085C7;
       outline-offset: 2px;
     }
     #open-chat svg {
