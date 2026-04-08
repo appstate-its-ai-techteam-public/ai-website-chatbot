@@ -437,11 +437,19 @@ function injectChatbot() {
     }
 }
 
-// Ensure the injection runs only after the full document is ready
+const ALLOWED_HOSTS = ['ai.appstate.edu'];
+
+function launchIfAllowed() {
+  if (!ALLOWED_HOSTS.includes(window.location.hostname)) {
+    throw new Error('Unauthorized host');
+  }
+  injectChatbot();
+}
+
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectChatbot);
+  document.addEventListener('DOMContentLoaded', launchIfAllowed);
 } else {
-    injectChatbot();
+  launchIfAllowed();
 }
 
 // Expose functions globally for debugging/manual control if needed
