@@ -437,7 +437,7 @@ function injectChatbot() {
     }
 }
 
-const ALLOWED_HOSTS = ['ai.appstate.edu'];
+const ALLOWED_HOSTS = ['ai.appstate.edu', 'live-ai-appstate-edu.pantheonsite.io'];
 
 function launchIfAllowed() {
   if (!ALLOWED_HOSTS.includes(window.location.hostname)) {
