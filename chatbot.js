@@ -194,19 +194,19 @@ function injectChatbot() {
       align-items: center;
       color: var(--header-textColor);
     }
-    .header-title {
+    #chatbot-header .header-title {
       display: flex;
       align-items: center;
       gap: 12px;
       font-size: 16px;
       font-weight: 500;
     }
-    .header-buttons {
+    #chatbot-header .header-buttons {
       display: flex;
       gap: 12px;
       align-items: center;
     }
-    .icon-button {
+    #chatbot-popup .icon-button {
       background: none;
       border: none;
       color: var(--header-textColor);
@@ -218,11 +218,11 @@ function injectChatbot() {
       justify-content: center;
       transition: all 0.2s ease;
     }
-    .icon-button:hover {
+    #chatbot-popup .icon-button:hover {
       color: var(--header-textColor);
       background: rgba(255, 255, 255, 0.1);
     }
-    .icon-button:focus {
+    #chatbot-popup .icon-button:focus {
       outline: 2px solid rgba(255, 255, 255, 0.5);
       outline-offset: 2px;
     }
